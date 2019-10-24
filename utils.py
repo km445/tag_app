@@ -1,4 +1,3 @@
-import re
 import logging
 
 
@@ -17,8 +16,3 @@ class Log(object):
 def get_request_data(request):
     return dict(request.json or request.form.items() or
                 request.args.items() or {})
-
-
-def compile_re(tag):
-    tag_parts = tag.split()
-    return re.compile(".+".join(tag_parts), flags=re.DOTALL)
