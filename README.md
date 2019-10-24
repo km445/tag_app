@@ -2,7 +2,7 @@
 
 ## Application specification
 
-1. Estimated computational complexity - O(n)  (linear).
+1. Estimated computational complexity - O(nm)  (kind of linear; depends on amount of tags and words in a given tag).
 1. Available tags are stored in constants.py
 1. Using application virtualenv, run some tests with `python -m unittest tests.get_tags_tests` in a terminal in project root.
 1. If applicable, time spent on request processing is sent in "time_taken" response parameter. It does not include network delays.
